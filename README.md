@@ -1,25 +1,42 @@
 # Smart Student Support System
+
 ## Overview
 
 The Smart Student Support System is a web application designed to help students receive personalized academic support. It analyzes student performance, attendance and learning interests, then provides useful recommendations using machine learning. The system also offers dashboards for both students and administrators to track progress and manage academic activities more efficiently.
 
 
-## Key Features
-
-**Personalized Academic Analysis**: Analyzes performance, attendance and interests to understand each student's learning pattern.
-
-**Machine Learning Recommendations**: Suggests suitable courses, study materials and improvement steps based on student data.
-
-**Student Dashboard**: Gives students a clear view of their academic status, recommended actions and alerts.
-
-**Admin Dashboard**: Allows administrators to monitor student performance, identify weak areas and send alerts.
-
-**Automated Alerts**: Notifies students when performance drops or attendance becomes irregular.
-
-**Secure User Authentication**: Login system for students and administrators with protected access.
+## Screenshot
 
 
-## How It Works
+
+<img width="1920" height="1080" alt="Screenshot (1)" src="https://github.com/user-attachments/assets/9727b32a-82b3-46ea-8941-2276c130cebf" />
+
+
+<img width="1920" height="1080" alt="Screenshot (2)" src="https://github.com/user-attachments/assets/3ef72485-2259-4926-8616-ce7179405e73" />
+
+
+<img width="1920" height="1080" alt="Screenshot (3)" src="https://github.com/user-attachments/assets/beb0beb0-eaeb-4ea8-a239-fc121be3a7ee" />
+
+
+<img width="1920" height="1080" alt="Screenshot (4)" src="https://github.com/user-attachments/assets/23631310-63bb-47f8-9f2f-41399a7f9736" />
+
+
+# Features
+
+- **Personalized Academic Analysis**: Analyzes performance, attendance and interests to understand each student's learning pattern.
+
+- **Machine Learning Recommendations**: Suggests suitable courses, study materials and improvement steps based on student data.
+
+- **Student Dashboard**: Gives students a clear view of their academic status, recommended actions and alerts.
+
+- **Admin Dashboard**: Allows administrators to monitor student performance, identify weak areas and send alerts.
+
+- **Automated Alerts**: Notifies students when performance drops or attendance becomes irregular.
+
+- **Secure User Authentication**: Login system for students and administrators with protected access.
+
+
+  ## How It Works
 
 1.**User Registration & Login**- Users create accounts and log in through the web interface.
 
@@ -31,120 +48,82 @@ The Smart Student Support System is a web application designed to help students 
 
 5.**Notifications**- In-app alerts are triggered when students need academic attention.
 
-## Tech Stack
 
-**Frontend**: HTML, CSS, JavaScript
+## Getting Started
 
-**Backend**: Python 
+Follow these steps to run the Smart Student Support System on your local machine.
 
-**Database**: MySQL
+1.**Clone or Download the Project**
 
-**Machine Learning**: Scikit-learn, Pandas, NumPy
+git clone https://github.com/Sanjay9923/Smart-Student-Support-System.git
+cd "Smart Student Support System"
 
-**Other Tools**: Flask-Login, dotenv
+2.**Install Required Dependencies**
 
+This project uses Flask. Install it using:
 
-## Installation & Setup
+pip install flask
 
-Follow these steps to install and run the Smart Student Support System on your local machine.
+If your project connects to MySQL, install:
 
-1.**Clone the Repository**
+pip install mysql-connector-python
 
-git clone https://github.com/your-username/Smart-Student-Support-System.git
-cd Smart-Student-Support-System
+If it uses SQLite, no extra installation is needed.
 
-2.**Create and Activate a Virtual Environment**
+3.**Configure the Database**
 
-It’s recommended to use a virtual environment.
+Make sure your database is created and includes tables for:
 
-Create environment
+Students
 
-python -m venv venv
+Login credentials
 
+Attendance or performance (optional)
 
-Activate environment
+If you already have a .db file or MySQL connection inside app.py, no extra setup is required.
 
-venv\Scripts\activate
+4.**Run the Application**
 
-
- 3.**Install Dependencies**
-
-Install all necessary Python libraries using:
-
-pip install -r requirements.txt
-
-4.**Configure the MySQL Database**
-
-Make sure MySQL server is installed and running.
-
-Create the database
-
-CREATE DATABASE student_support_db;
-
-
-If your project includes initdb.py, run this to set up tables:
-
-python initdb.py
-
-6.**Train or Load the Machine Learning Model**
-
-If you have a machine learning script like ml_model.py, run:
-
-python ml_model.py
-
-
-This will generate and save the model used by the system.
-
-7.**Start the Flask Server**
-
-Run the main application:
+Start the Flask server:
 
 python app.py
 
-8.**Open the Application**
+If everything loads correctly, you will see:
 
-Once the server is running, open your browser and go to:
+Running on http://127.0.0.1:5000/
+
+5.**Open the Web Application**
+
+Open your browser and visit:
 
 http://127.0.0.1:5000/
 
+You will see the login page.
 
-## Project Structure
+6.**Demo Login Credentials (For Testing)**
 
-Smart Student Support System/
+Student Login
 
-│
-├── app.py                      # Main application file
+Username: student01
 
-│
-├── database/                   # Database files
+Password: student123
 
-│   └── student_support.sql     # Database script or data file
+Admin Login
 
-│
-├── templates/                  # HTML templates
-│   ├── login.html
-│   ├── register.html
-│   ├── chatbot.html
-│   ├── dashboard.html
+Username: admin
 
-│
-├── static/                     # CSS, JS, and images
-│   ├── css/
-│   │   └── style.css
-│   ├── js/
-│   │   └── main.js
-│   └── images/
+Password: admin123
 
 
+## Technologies Used
 
-## System Architecture
+**Frontend**: HTML, CSS, JavaScript
 
-User → Web Interface (Flask App)
-↕
-MySQL Database
-↕
-Flask Backend → Machine Learning Model → Recommendations & Alerts
+**Backend**: Python (Flask Framework)
 
+**Database**: MySQL or SQLite (depending on your setup)
+
+**Libraries / Tools**: Flask, MySQL Connector / sqlite3, Jinja2 Templates
 
 
 ## Future Improvements
@@ -162,15 +141,13 @@ Enable multilingual support for wider accessibility.
 
 ## Project Contributor
 
-**Sanjay.s** — Developer and Project Lead
+Sanjay.s — Developer and Project Lead
 
 Contributions are welcome. Feel free to submit pull requests or propose enhancements to help improve the project.
 
 
 
-## License
 
-This project is open-source and available under the MIT License.
 
 
 
