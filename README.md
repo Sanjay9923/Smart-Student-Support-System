@@ -25,7 +25,7 @@ The Smart Student Support System is a web application designed to help students 
 ![Screenshot (5)](https://github.com/user-attachments/assets/d4a64922-96af-47df-ae29-3ba9a423a0c8)
 
 
-# Features
+## Features
 
 - **Personalized Academic Analysis**: Analyzes performance, attendance and interests to understand each student's learning pattern.
 
@@ -40,7 +40,7 @@ The Smart Student Support System is a web application designed to help students 
 - **Secure User Authentication**: Login system for students and administrators with protected access.
 
 
-  ## How It Works
+## How It Works
 
 1.**User Registration & Login**- Users create accounts and log in through the web interface.
 
@@ -51,6 +51,22 @@ The Smart Student Support System is a web application designed to help students 
 4.**Dashboards**- Students and admins can view performance trends, suggestions and alerts.
 
 5.**Notifications**- In-app alerts are triggered when students need academic attention.
+
+
+## Project Structure
+
+```bash
+Student-Support-System/
+│
+├── app.py
+├── database.db
+│
+└── templates/
+    ├── login.html
+    ├── index.html
+    ├── chatbot.html
+    └── register.html
+```
 
 
 ## Getting Started
@@ -151,14 +167,14 @@ Add a detailed AI dashboard for student risk prediction.
 Enable multilingual support for wider accessibility.
 
 
-## Project Contributor
+## Author
 
 Sanjay.s — Developer and Project Lead
 
-Contributions are welcome. Feel free to submit pull requests or propose enhancements to help improve the project.
+Contributions are welcome. Feel free to submit pull requests or suggest improvements.
 
 
-### License
+## License
 
 This project is **free to use** and does not contains any license.
 
