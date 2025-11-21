@@ -97,17 +97,18 @@ If it uses SQLite, no extra installation is needed.
 
 Make sure your database is created and includes tables for:
 
-Students
+- Students
 
-Login credentials
+- Login credentials
 
-Attendance or performance (optional)
+- Attendance or performance (optional)
 
-If you already have a .db file or MySQL connection inside app.py, no extra setup is required.
+- If you already have a .db file or MySQL connection inside app.py, no extra setup is required.
 
 4.**Run the Application**
 
 Start the Flask server:
+
 ```bash
 python app.py
 ```
@@ -130,13 +131,13 @@ You will see the login page.
 
 6.**Demo Login Credentials (For Testing)**
 
-Student Login
+- Student Login
 
 Username: student01
 
 Password: student123
 
-Admin Login
+- Admin Login
 
 Username: admin
 
@@ -156,15 +157,15 @@ Password: admin123
 
 ## Future Improvements
 
-Add a mobile app for students and faculty.
+- Add a mobile app for students and faculty.
 
-Integrate chatbot support for instant academic queries.
+- Integrate chatbot support for instant academic queries.
 
-Implement real-time attendance analytics using IoT or RFID.
+- Implement real-time attendance analytics using IoT or RFID.
 
-Add a detailed AI dashboard for student risk prediction.
+- Add a detailed AI dashboard for student risk prediction.
 
-Enable multilingual support for wider accessibility.
+- Enable multilingual support for wider accessibility.
 
 
 ## Author
